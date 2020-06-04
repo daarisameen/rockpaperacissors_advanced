@@ -1,8 +1,7 @@
 package com.example.najmus.rps;
-/*====================================
-    Author : NAJMUS SEEMAB
-======================================*/
 
+
+import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,13 +25,14 @@ public class Play extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play);
 
+
         b_rock = (Button) findViewById(R.id.b_rock);
         b_paper = (Button) findViewById(R.id.b_paper);
         b_scissors = (Button) findViewById(R.id.b_scissors);
         b_score = (Button) findViewById(R.id.b_score);
         b_you = (Button) findViewById(R.id.b_you);
         b_comp = (Button) findViewById(R.id.b_comp);
-        b_comment = (Button) findViewById(R.id.b_comment);
+
 
         iv_YourChoice = (ImageView) findViewById(R.id.iv_YourChoice);
         iv_ComputerChoice = (ImageView) findViewById(R.id.iv_ComputerChoice);
@@ -42,7 +42,7 @@ public class Play extends AppCompatActivity {
         b_rock.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iv_YourChoice.setImageResource(R.drawable.you_rock);
+                iv_YourChoice.setImageResource(R.drawable.rock);
                 String message = play_turn("rock");
 
                 tv_declare.setText(message);
@@ -61,7 +61,7 @@ public class Play extends AppCompatActivity {
         b_paper.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iv_YourChoice.setImageResource(R.drawable.you_paper);
+                iv_YourChoice.setImageResource(R.drawable.paper);
                 String message = play_turn("paper");
 
                 tv_declare.setText(message);
@@ -74,7 +74,7 @@ public class Play extends AppCompatActivity {
         b_scissors.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                iv_YourChoice.setImageResource(R.drawable.you_scis);
+                iv_YourChoice.setImageResource(R.drawable.scissors);
                 String message = play_turn("scissors");
 
                 tv_declare.setText(message);
@@ -103,11 +103,11 @@ public class Play extends AppCompatActivity {
 
         //set the computer image based on his choice
         if (computer_choice == "rock") {
-            iv_ComputerChoice.setImageResource(R.drawable.comp_rock);
+            iv_ComputerChoice.setImageResource(R.drawable.rock);
         } else if (computer_choice == "paper") {
-            iv_ComputerChoice.setImageResource(R.drawable.comp_paper);
+            iv_ComputerChoice.setImageResource(R.drawable.paper);
         } else if (computer_choice == "scissors") {
-            iv_ComputerChoice.setImageResource(R.drawable.comp_scis);
+            iv_ComputerChoice.setImageResource(R.drawable.scissors);
         }
 
         //compare human and computer to determine who wins

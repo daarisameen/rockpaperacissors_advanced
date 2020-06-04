@@ -44,7 +44,7 @@ public class Play15 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (YourScore < 15 && ComputerScore < 15)
-                    iv_YourChoice.setImageResource(R.drawable.you_rock);
+                    iv_YourChoice.setImageResource(R.drawable.rock);
 
                 if (YourScore < 15 && ComputerScore < 15) {
                     String message = play_turn("rock");
@@ -74,7 +74,7 @@ public class Play15 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (YourScore < 15 && ComputerScore < 15)
-                    iv_YourChoice.setImageResource(R.drawable.you_paper);
+                    iv_YourChoice.setImageResource(R.drawable.paper);
 
                 if (YourScore < 15 && ComputerScore < 15) {
                     String message = play_turn("paper");
@@ -104,7 +104,7 @@ public class Play15 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (YourScore < 15 && ComputerScore < 15)
-                    iv_YourChoice.setImageResource(R.drawable.you_scis);
+                    iv_YourChoice.setImageResource(R.drawable.scissors);
 
                 if (YourScore < 15 && ComputerScore < 15) {
                     String message = play_turn("scissors");
@@ -160,11 +160,11 @@ public class Play15 extends AppCompatActivity {
 
         //set the computer image based on his choice
         if (computer_choice == "rock") {
-            iv_ComputerChoice.setImageResource(R.drawable.comp_rock);
+            iv_ComputerChoice.setImageResource(R.drawable.rock);
         } else if (computer_choice == "paper") {
-            iv_ComputerChoice.setImageResource(R.drawable.comp_paper);
+            iv_ComputerChoice.setImageResource(R.drawable.paper);
         } else if (computer_choice == "scissors") {
-            iv_ComputerChoice.setImageResource(R.drawable.comp_scis);
+            iv_ComputerChoice.setImageResource(R.drawable.scissors);
         }
 
         //compare human and computer to determine who wins

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">RPS</string>
+    <string name="app_name">daaris RockPaperScissors</string>
+    <string name="linktosite">App created by \n <a href="https://www.youtube.com/channel/UCGZqfhlwer6NOESDmN9Yi5Q">Daaris Ameen Z</a> \n \n Basic Rules of this game\n\n ROCK beats SCISSORS\nSCISSORS beats PAPER \nPAPER beats ROCK\n\n Have Fun \n PLAY AND SHARE\nMy app</string>
 </resources>
